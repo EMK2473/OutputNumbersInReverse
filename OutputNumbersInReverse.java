@@ -10,13 +10,13 @@ public class OutputNumbersInReverse {
 
       for(int i = 0; i < numElements; ++i){
          userList[i] = scnr.nextInt();
-         System.out.println(userList[i] + " ");
+         System.out.print(userList[i] + " ");
       }
 
-
-
+      for(int i = numElements - 1; i >= 0; --i ){
+         System.out.print(userList[i] + ",");
+      }
       
-
       scnr.close();
    }
 }
